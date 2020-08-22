@@ -10,7 +10,7 @@ from collections import OrderedDict
 # import matplotlib.pyplot as plot
 app = Flask(__name__)
  
-model_path = '/home/VerificationProject/checkpoints/model.pth'
+model_path = '/home/Verification/checkpoints/model.pth'
 source = [str(i) for i in range(0, 10)]
 source += [chr(i) for i in range(97, 97+26)]
 alphabet = ''.join(source)

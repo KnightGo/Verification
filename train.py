@@ -19,14 +19,14 @@ import os
 batch_size = 10
 base_lr = 0.001
 max_epoch = 200
-model_path = '/home/VerificationProject/checkpoints/model.pth'
+model_path = '/home/Verification/checkpoints/model.pth'
 restor = False
 weight=200
 height=60
-trainPath='/home/VerificationProject/data/train'
-testPath='/home/VerificationProject/data/test'
-if not os.path.exists('/home/VerificationProject/checkpoints'):
-    os.mkdir('/home/VerificationProject/checkpoints')
+trainPath='/home/Verification/data/train'
+testPath='/home/Verification/data/test'
+if not os.path.exists('/home/Verification/checkpoints'):
+    os.mkdir('/home/Verification/checkpoints')
 
 def calculat_acc(output, target):
     output, target = output.view(-1, 36), target.view(-1, 36)
